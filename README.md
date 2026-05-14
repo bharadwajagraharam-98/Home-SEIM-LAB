@@ -117,7 +117,38 @@ Detailed guides available in the `docs/` directory:
 - Kibana (visualization and dashboards)
 - Open-source SIEM solutions
 
-## 📝 License
+## � Next Steps & Future Enhancements
+
+To strengthen this project and build a more comprehensive SIEM lab, consider adding:
+
+### Data Collection & Ingestion
+- **Filebeat** — Lightweight log shipper to collect logs directly from endpoints and servers
+- **Metricbeat** — Collect system and service metrics for infrastructure monitoring
+
+### Detection & Analytics
+- **Custom detection rules** — Create alerts for specific patterns (e.g., HTTP 5xx spikes, geographic anomalies, failed authentication attempts)
+- **Wazuh integration** — Add open-source SIEM/XDR capabilities on top of the ELK stack for advanced threat detection
+- **MITRE ATT&CK mapping** — Tag detected behaviors to the MITRE ATT&CK framework for threat intelligence
+
+### Security & Production Readiness
+- **Enable Elasticsearch security** — Configure TLS/SSL certificates and authentication (X-Pack or alternatives)
+- **Implement role-based access control (RBAC)** — Separate admin and analyst permissions
+
+### Threat Simulation & Learning
+- **Simulate attacks** — Use security tools like `nmap`, `metasploit`, or `atomic-red-team` to generate realistic security events
+- **Log injection testing** — Create payloads that exercise detection rules
+- **Incident response workflows** — Build runbooks for common alerts and practice response procedures
+
+### Visualization & Insights
+- **Custom Kibana dashboards** — Security overview, threat intelligence, compliance monitoring
+- **Automated reports** — Generate daily/weekly security digests
+
+### Documentation & Knowledge Base
+- **Detection runbooks** — Document how to investigate and respond to each alert
+- **Lab scenarios** — Create guided exercises for practicing security operations
+- **Integration guides** — Step-by-step setup for adding new data sources
+
+## �📝 License
 
 This project is provided as-is for educational purposes.
 
