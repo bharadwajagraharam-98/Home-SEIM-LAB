@@ -16,6 +16,36 @@ This project demonstrates a home-based SIEM infrastructure for security monitori
 
 ## 🏗️ Architecture
 
+```
+┌─────────────────┐
+│  Log Sources    │
+│  - Servers      │
+│  - Firewalls    │
+│  - Endpoints    │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Log Forwarders │
+│  - Agents       │
+│  - Collectors   │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  SIEM Platform  │
+│  - Aggregation  │
+│  - Parsing      │
+│  - Analysis     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Dashboards &   │
+│  Visualization  │
+└─────────────────┘
+```
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -31,3 +61,73 @@ This project demonstrates a home-based SIEM infrastructure for security monitori
    ```bash
    git clone https://github.com/bharadwajagraharam-98/Home-SEIM-LAB.git
    cd Home-SEIM-LAB
+   ```
+
+2. **Review the documentation**
+   - See `docs/` directory for detailed setup guides
+
+3. **Deploy the lab**
+   ```bash
+   docker-compose up -d
+   ```
+
+4. **Access the dashboards**
+   - Kibana: http://localhost:5601
+   - Elasticsearch: http://localhost:9200
+
+## 📁 Project Structure
+
+```
+Home-SEIM-LAB/
+├── README.md                  # Project overview
+├── docker-compose.yml         # Docker Compose setup
+├── .gitignore                 # Git ignore rules
+├── docs/                      # Documentation
+│   ├── SETUP.md              # Installation guide
+│   └── ARCHITECTURE.md        # Architecture documentation
+├── configs/                   # Configuration files
+│   └── logstash.conf         # Logstash configuration
+├── logs/                      # Log samples and test data
+└── scripts/                   # Utility scripts
+```
+
+## 🔧 Components
+
+- **Log Collection**: Agents and forwarders for data gathering
+- **Log Storage**: Centralized log repository
+- **Analysis Engine**: Rules and correlation
+- **Visualization**: Dashboards and reports
+- **Alerting**: Notification and response mechanisms
+
+## 📚 Documentation
+
+Detailed guides available in the `docs/` directory:
+- Installation guide
+- Configuration guide
+- Usage examples
+- Troubleshooting
+
+## 🛠️ Tech Stack
+
+- Container orchestration (Docker/Docker Compose)
+- Elasticsearch (log storage and search)
+- Logstash (log processing and forwarding)
+- Kibana (visualization and dashboards)
+- Open-source SIEM solutions
+
+## 📝 License
+
+This project is provided as-is for educational purposes.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues and pull requests.
+
+## 📧 Support
+
+For questions and support, please open an issue in the repository.
+
+---
+
+**Last Updated**: 2026-05-14
+**Status**: Active Development
