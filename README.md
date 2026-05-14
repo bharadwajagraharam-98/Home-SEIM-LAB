@@ -15,3 +15,19 @@ This project demonstrates a home-based SIEM infrastructure for security monitori
 - Practice incident response and threat detection
 
 ## 🏗️ Architecture
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker and Docker Compose
+- Git
+- Basic understanding of SIEM concepts
+- 4GB+ RAM available for lab environment
+
+### Quick Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/bharadwajagraharam-98/Home-SEIM-LAB.git
+   cd Home-SEIM-LAB
