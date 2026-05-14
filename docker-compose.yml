@@ -46,6 +46,9 @@ services:
       - "5601:5601"
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - xpack.encryptedSavedObjects.encryptionKey=HomeSIEMLab123456789012345678901234567890
+      - xpack.security.encryptionKey=HomeSIEMSecurity123456789012345678901234567890
+      - xpack.reporting.encryptionKey=HomeSIEMReporting123456789012345678901234567890
     depends_on:
       - elasticsearch
     networks:
