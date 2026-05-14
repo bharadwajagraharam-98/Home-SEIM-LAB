@@ -1,0 +1,64 @@
+# Log files
+*.log
+logs/
+*.tar.gz
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Data and database files
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Credentials and secrets
+secrets/
+*.key
+*.pem
+*.crt
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+*.o
+*.a
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Backup files
+*.backup
+*.bak
