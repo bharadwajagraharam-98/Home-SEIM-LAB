@@ -75,6 +75,8 @@ This project demonstrates a home-based SIEM infrastructure for security monitori
    - Kibana: http://localhost:5601
    - Elasticsearch: http://localhost:9200
 
+> This lab uses Elasticsearch with security disabled, so Kibana is configured to connect without a username/password.
+
 ## 📁 Project Structure
 
 ```

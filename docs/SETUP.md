@@ -69,8 +69,7 @@ curl http://localhost:5601/api/status
 
 ### Kibana Dashboard
 - **URL**: http://localhost:5601
-- **Default User**: elastic
-- **Default Password**: changeme
+- No authentication is required by default in this lab configuration.
 
 ### Elasticsearch API
 - **URL**: http://localhost:9200
