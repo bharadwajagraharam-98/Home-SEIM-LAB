@@ -1,4 +1,4 @@
-# Home SIEM Lab
+# Home SIEM Lab Simulation
 
 A comprehensive Security Information and Event Management (SIEM) lab setup for learning and experimentation with security monitoring, log aggregation, and threat detection.
 
